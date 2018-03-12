@@ -5,7 +5,7 @@
 #	@original source : https://241931348f64b1d1.wordpress.com/2015/10/21/how-to-dump-users-proxyaddresses-attribute-with-powershell/ 
 #
 cls
-$contactou = "OU=SA SAGET,DC=RDR,DC=LAB"
+$contactou = "OU=users ,DC=mondomaine,DC=intra"
 cd C:\
 Import-Csv "alldominocontacts.csv" -delimiter ";" | ForEach-Object{
     $guid = $_.ObjectGUID
