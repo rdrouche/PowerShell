@@ -1,7 +1,7 @@
 ﻿#
 #	@author: Romain Drouche
 #	@Description : Exporte le champs proxyAddresses des utilisateurs de l'OU cible $contactou
-#	@website : http://blog.rdr-it.col
+#	@website : http://blog.rdr-it.com
 #	@original source : https://241931348f64b1d1.wordpress.com/2015/10/21/how-to-dump-users-proxyaddresses-attribute-with-powershell/ 
 #
 ipmo activedirectory
