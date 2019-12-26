@@ -1,15 +1,16 @@
 #
-# RDR
-# Recupere et fermer les sessions actives et reboot le serveur
-# Compatible RDS 2012 avec serveur BROKER
-#
+# RDR-IT
+# Get close and active sessions of a desktop session host server remotely and reboot the server
+# Compatible with RDS farms 2012R2 / 2016/2019
 #
 
 $ServerBroker = ""
 $ServerHost = ""
 
+# Get sessions from broker
 $Sessions = Get-RDUserSession -ConnectionBroker $ServerBroker
 
+# Browse all open sessions and close sessions on the session host server configured in parameter
 foreach($Session in $Sessions){
 
     #Write Event
